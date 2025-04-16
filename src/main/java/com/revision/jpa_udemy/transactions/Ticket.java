@@ -17,5 +17,17 @@ public class Ticket {
 	private Long id;
 	private String source;
 	private String destination;
+	private Double fare;
 	private Date date;
+	
+	public Ticket() {}
+	
+	public Ticket(String source, String destination, Double fare, Date date) {
+		this.source = source;
+		this.destination = destination;
+		this.fare = fare;
+		this.date = date;
+	}
+	
+	
 }

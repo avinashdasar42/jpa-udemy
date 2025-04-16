@@ -15,12 +15,14 @@ public class BookTicketClient implements ApplicationRunner{
 	
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		Ticket ticket = new Ticket();
-		ticket.setSource("Pune");
-		ticket.setDestination("Mumbai");
-		ticket.setDate(new Date());
+		ticketService.persistTicket();
 //		ticketService.bookTicketWithoutTransactional(ticket);
-		ticketService.bookTicketWithTransactional(ticket);
+//		ticketService.bookTicketWithTransactional(ticket);
+//		ticketService.someTask();
+//		ticketService.bookRide(ticket);
+		
+//		ticketService.fetchWithReadWriteTransaction();
+		ticketService.fetchWithReadOnlyTransaction();
 	}
-
+ 
 }
