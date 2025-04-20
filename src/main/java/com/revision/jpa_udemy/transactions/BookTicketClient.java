@@ -22,7 +22,7 @@ public class BookTicketClient implements ApplicationRunner{
 //		ticketService.bookRide(ticket);
 		
 //		ticketService.fetchWithReadWriteTransaction();
-		ticketService.fetchWithReadOnlyTransaction();
+//		ticketService.fetchWithReadOnlyTransaction();
 	}
  
 }

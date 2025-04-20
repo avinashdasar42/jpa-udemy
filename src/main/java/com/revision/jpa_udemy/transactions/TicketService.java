@@ -57,13 +57,13 @@ public class TicketService {
 
 	@Transactional
 	public void persistTicket() {
-		Ticket ticket1 = new Ticket("Pune","Mumbai",500.0,new Date());
+		Ticket ticket1 = new Ticket("Pune","Mumbai",1000.0,new Date());
 		Ticket ticket2 = new Ticket("Pune","Delhi",1500.0,new Date());
 		ticketRepository.save(ticket1);
 		ticketRepository.save(ticket2);
 	}
 
-	//By Default readOnly=false i.e read-write is ON
+	//By Default readOnly=false i.e read-write is ON hence DB is updated
 	@Transactional
 	public void fetchWithReadWriteTransaction() {
 		Ticket ticket = ticketRepository.findById(1L).get();
