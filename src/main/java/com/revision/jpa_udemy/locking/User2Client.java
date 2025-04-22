@@ -1,4 +1,4 @@
-package com.revision.jpa_udemy.locking.optimistic;
+package com.revision.jpa_udemy.locking;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

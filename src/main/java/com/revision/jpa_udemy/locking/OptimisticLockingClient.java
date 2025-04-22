@@ -1,4 +1,4 @@
-package com.revision.jpa_udemy.locking.optimistic;
+package com.revision.jpa_udemy.locking;
 
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;

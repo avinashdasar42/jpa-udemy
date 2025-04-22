@@ -1,4 +1,4 @@
-package com.revision.jpa_udemy.locking.optimistic;
+package com.revision.jpa_udemy.locking;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -24,11 +24,11 @@ public class PessimisticLockingClient implements ApplicationRunner{
 
 	@Override
 	public void run(ApplicationArguments args) throws Exception {
-		ExecutorService executor = Executors.newFixedThreadPool(2);
-		executor.execute(user1Client);
-		executor.execute(user2Client);
-		
-		executor.shutdown();
+//		ExecutorService executor = Executors.newFixedThreadPool(2);
+//		executor.execute(user1Client);
+//		executor.execute(user2Client);
+//		
+//		executor.shutdown();
 	}
 	
 	
